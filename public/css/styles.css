@@ -1,0 +1,147 @@
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootflat/2.0.4/css/bootflat.min.css');
+
+* {
+  list-style: none;
+}
+
+select {
+  appearance: auto;
+}
+
+
+/* layout.blade.php */
+
+.my-navbar {
+  align-items: center;
+  background: #e7e7e7;
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  padding: 0 2%;
+}
+
+.my-navbar-brand {
+  font-size: 18px;
+  color: #000000;
+  font-family: Rockwell;
+  font-weight: bold;
+}
+
+.my-navbar-brand:hover {
+  color: #949699;
+}
+
+.form-search {
+  display: flex;
+}
+
+.form-search input[type=submit] {
+  color: #000000;
+  width: 70px;
+  height: 30px;
+  font-size: 15px;
+  line-height: 30px;
+  padding: 0;
+  font-weight: bold;
+}
+
+.my-navbar-control input[type=submit] {
+  border: none;
+  background: none;
+  color: #3bafda;
+}
+
+.fs-7 {
+  font-size: 14px;
+}
+
+
+/* home.blade.php */
+
+.top-button {
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  background-image: url(../../storage/app/public/summerbeach.jpg);
+}
+
+.top-button a {
+  position: relative;
+  top: 80%;
+}
+
+
+/* product-list.blade.php */
+
+.img-cover {
+  object-fit: cover;
+}
+
+.img-hover {
+  transition-property: opacity;
+  transition-duration: 0.5s;
+}
+
+.img-hover:hover {
+  opacity: 0.7;
+}
+
+/* login.balde.php */
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+
+/* product-detail.blade.php */
+
+.product-quantity {
+  margin-bottom: 1rem;
+}
+
+.product-quantity select {
+  font-size: 16px;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+
+/* confirm.blade.php */
+textarea {
+  resize: none;
+}
+
+/* admin-layout.blade.php */
+.admin-navbar-brand {
+  font-size: 18px;
+  color: #000000;
+  font-family: Rockwell;
+  font-weight: bold;
+}
+
+/* order.blade.php */
+.label {
+  color: white;
+  padding: 0.5rem;
+}
+
+.form-control-half {
+  width: 45%;
+}
+
+/* input type="number"の矢印ボタンの削除 */
+.spin-erase::-webkit-inner-spin-button,
+.spin-erase::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
